@@ -18,7 +18,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     min-height: 1200px;
     margin: 50px;
     background: #fff;
@@ -126,7 +126,25 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.about-interest ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-interest ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.about-interest ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
 }
 
 .profile-text .img-box {
@@ -194,6 +212,12 @@ body {
     margin: 10px 0;
 }
 
+hr {
+    height: 1px;
+    background-color: #848c90;
+    border: none;
+}
+
 .about .box .year-company {
     min-width: 150px;
 }
@@ -210,56 +234,44 @@ body {
     font-size: 16px;
 }
 
-.about-skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    /* 150 px like .about .box .year-company */
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-skills .box h4 {
+.about .box .position h3 {
     text-transform: uppercase;
-    color: #7d828a;
-    font-weight: 500;
+    color: #2a7da2;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-.about-skills .box .percent {
+.about-skills {
     position: relative;
-    width: 100%;
-    height: 10px;
-    background: #d8d5d5;
-}
-
-.about-skills .box .percent div {
-    position: absolute;
-    height: 100%;
-    background: #03a9f4;
-    top: 0;
-    left: 0;
-}
-
-.about-interest ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
 }
 
-.about-interest ul li {
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 10px 0;
+.about-skills .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #003147;
+    height: 30px;
+    margin-right: 10px;
 }
 
-.about-interest ul li .fa {
-    color: #03a9f4;
-    font-size: 18px;
-    width: 20px;
+.about-skills .educative-icon {
+    display: inline-block;
+    width: 21px;
+    color: #003147;
+    height: 21px;
+    margin-right: 19px;
 }
 
-@media(max-width: 1000px) {
+.about-skills .box a {
+    text-decoration: none;
+    display: flex;
+    color: #2a7da2;
+    flex-direction: row;
+}
+
+@media(max-width: 1200px) {
 
     .container {
         margin: 10px;
@@ -267,11 +279,11 @@ body {
     }
 
     .about-interest ul {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 700px) {
     .about .box {
         flex-direction: column;
     }
@@ -284,7 +296,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .about-skills .box {
+    .about-skills {
         grid-template-columns: repeat(1, 1fr);
     }
 }
