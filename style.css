@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    cursor: default;
 }
 
 .container {
@@ -55,7 +56,6 @@ body {
     list-style: none;
     position: relative;
     margin: 5px 0;
-    cursor: pointer;
 }
 
 .contact-info ul li .icon {
@@ -145,6 +145,7 @@ body {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
+    margin-right: 3px;
 }
 
 .profile-text .img-box {
